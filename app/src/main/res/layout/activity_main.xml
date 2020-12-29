@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/ripple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rb_color="#FFFFFF"
+        app:rb_duration="500"
+        app:rb_type="fillRipple"
+        app:rb_radius="40dp"
+        app:rb_rippleAmount="15"
+        app:rb_scale="8">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/one"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#FD0000"
+                    android:onClick="filterOne"
+                    android:src="@drawable/filter1" />
+
+                <ImageView
+                    android:id="@+id/two"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#004AFD"
+                    android:onClick="filterTwo"
+                    android:src="@drawable/filter2" />
+
+                <ImageView
+                    android:id="@+id/three"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#5AFF00"
+                    android:onClick="filterThree"
+                    android:src="@drawable/filter3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/four"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#FAC60C"
+                    android:onClick="filterFour"
+                    android:src="@drawable/filter4" />
+
+                <ImageView
+                    android:id="@+id/five"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#02F6C6"
+                    android:onClick="filterFive"
+                    android:src="@drawable/filter5" />
+
+                <ImageView
+                    android:id="@+id/six"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="#FF07DE"
+                    android:onClick="filterSix"
+                    android:src="@drawable/filter6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/seven"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#FF6D00"
+                    android:onClick="filterSeven"
+
+                    android:src="@drawable/filter7" />
+
+                <ImageView
+                    android:id="@+id/eight"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#00BFA5"
+                    android:onClick="filterEight"
+                    android:src="@drawable/filter8" />
+
+                <ImageView
+                    android:id="@+id/nine"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#C51162"
+                    android:onClick="filterNine"
+                    android:src="@drawable/filter9" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.skyfishjy.library.RippleBackground>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
